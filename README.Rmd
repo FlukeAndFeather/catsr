@@ -1,0 +1,55 @@
+---
+title: catsr_readme
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# catsr
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/FlukeAndFeather/catsr/workflows/R-CMD-check/badge.svg)](https://github.com/FlukeAndFeather/catsr/actions)
+<!-- badges: end -->
+
+catsr reads and visualizes CATS PRH files.
+
+## Installation
+
+You can install catsr from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("FlukeAndFeather/catsr")
+```
+
+## Reading data
+
+Read a CATS PRH file in NetCDF format.
+
+```{r read}
+library(catsr)
+nc_path <- system.file("extdata", "mn200312-58_prh10.nc", package = "catsr")
+mn200312_58 <- read_nc(nc_path)
+```
+
+Examine PRH variables (e.g. depth, pitch, and roll) in an interactive plot. GitHub READMEs don't support interaction, so a screenshot is supplied instead.
+
+```{r plot}
+view_cats(mn200312_58, c("p", "pitch", "roll"))
+```
+
+Triaxial variables (such as accelerometry - `aw`) are represented in multiple colors.
+
+```{r plot_triax}
+view_cats(mn200312_58, c("p", "aw", "mw"))
+```
+

@@ -1,0 +1,27 @@
+Package: catsr
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Max",
+           family = "Czapanskiy",
+           role = c("aut", "cre"),
+           email = "maxczap@stanford.edu",
+           comment = c("ORCID-ID" = "0000-0002-6302-905X"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    cowplot,
+    dplyr,
+    lubridate,
+    patchwork,
+    stringr
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
