@@ -8,7 +8,7 @@ catsr\_readme
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/FlukeAndFeather/catsr/workflows/R-CMD-check/badge.svg)](https://github.com/FlukeAndFeather/catsr/actions)
-[![test-coverage](https://github.com/FlukeAndFeather/catsr/workflows/test-coverage/badge.svg)](https://github.com/FlukeAndFeather/catsr/actions)
+[![codecov](https://codecov.io/gh/FlukeAndFeather/catsr/branch/master/graph/badge.svg?token=006B4PEFI0)](https://codecov.io/gh/FlukeAndFeather/catsr)
 <!-- badges: end -->
 
 catsr reads and visualizes CATS PRH files.
