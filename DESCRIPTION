@@ -1,5 +1,5 @@
 Package: catsr
-Title: What the Package Does (One Line, Title Case)
+Title: Tools for using CATS PRH files in R.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Max",
@@ -7,7 +7,9 @@ Authors@R:
            role = c("aut", "cre"),
            email = "maxczap@stanford.edu",
            comment = c("ORCID-ID" = "0000-0002-6302-905X"))
-Description: What the package does (one paragraph).
+Description: catsr reads and visualizes CATS PRH files. Allows users to read a 
+NetCDF PRH file into a data.frame and create interactive figures of sensor data
+using plotly.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
