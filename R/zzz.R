@@ -1,3 +1,3 @@
 #' @import dplyr
 #' @import ggplot2
-NULL
+globalVariables(c("dt", "vals", "axis", "dn", "aw"))
