@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/FlukeAndFeather/catsr/workflows/R-CMD-check/badge.svg)](https://github.com/FlukeAndFeather/catsr/actions)
+[![test-coverage](https://github.com/FlukeAndFeather/catsr/workflows/test-coverage/badge.svg)](https://github.com/FlukeAndFeather/catsr/actions)
 <!-- badges: end -->
 
 catsr reads and visualizes CATS PRH files.
