@@ -7,15 +7,12 @@ Authors@R:
            role = c("aut", "cre"),
            email = "maxczap@stanford.edu",
            comment = c("ORCID-ID" = "0000-0002-6302-905X"))
-Description: catsr reads and visualizes CATS PRH files. Allows users to read a 
-NetCDF PRH file into a data.frame and create interactive figures of sensor data
-using plotly.
+Description: catsr reads and visualizes CATS PRH files. Allows users to
+    read a NetCDF PRH file into a data.frame and create interactive
+    figures of sensor data using plotly.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Language: es
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
 Imports: 
     dplyr,
     ggplot2,
@@ -24,8 +21,11 @@ Imports:
     plotly,
     stringr,
     tidyr
-Depends: 
-    R (>= 2.10)
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
+Language: es
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
