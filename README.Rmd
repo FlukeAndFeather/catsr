@@ -40,6 +40,7 @@ Read a CATS PRH file in NetCDF format. The .nc file for deployment mn200312-58 i
 library(catsr)
 nc_path <- system.file("extdata", "mn200312-58_prh10.nc", package = "catsr")
 mn200312_58_from_nc <- read_nc(nc_path)
+mn200312_58_from_nc
 ```
 
 ## Visualizing data
