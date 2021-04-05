@@ -32,6 +32,8 @@ You can install catsr from [GitHub](https://github.com/) with:
 devtools::install_github("FlukeAndFeather/catsr")
 ```
 
+On Windows you might encounter `Error: Failed to install 'catsr' from GitHub: (converted from warning) cannot remove prior installation of package '___'`. The usual solution is: close all instances of R (including RStudio), start a new session, and try again.
+
 ## Reading data
 
 Read a CATS PRH file in NetCDF format. The .nc file for deployment mn200312-58 is included in the package.
