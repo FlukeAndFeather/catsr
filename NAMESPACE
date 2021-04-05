@@ -2,6 +2,5 @@
 
 export(read_nc)
 export(view_cats)
-export(view_cats_3d)
 import(dplyr)
 import(ggplot2)
