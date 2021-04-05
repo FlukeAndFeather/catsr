@@ -54,3 +54,18 @@ make_subplot <- function(var, prh) {
             legend.title = element_blank())) %>%
     plotly::ggplotly(dynamicTicks = TRUE)
 }
+
+#' Visualize CATS data as 3d geotrack
+#'
+#' @param prh A CATS PRH object (see \code{\link{read_nc}})
+#'
+#' @return A 3d plotly figure
+#' @export
+#'
+#' @examples
+#' view_cats_3d(mn200312_58)
+view_cats_3d <- function(prh) {
+  prh$z <- -prh$z
+  plotly::plot_ly(prh, x = ~x, y = ~y, z = ~z,
+                  type = "scatter3d", mode = "lines")
+}
