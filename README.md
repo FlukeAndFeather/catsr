@@ -37,14 +37,13 @@ mn200312_58_from_nc <- read_nc(nc_path)
 
 Examine PRH variables (e.g. depth, pitch, and roll) in an interactive
 plot. This package also provides deployment mn200312-58 directly for use
-in R (`mn200312_58`). GitHub READMEs don’t support interaction, so we
-show a screenshot here instead.
+in R (`mn200312_58`).
 
 ``` r
 view_cats(mn200312_58, c("p", "pitch", "roll"))
 ```
 
-<img src="man/figures/README-plot-1.png" width="100%" />
+![interactive figure with CATS data](man/figures/README-plot-1.gif)
 
 Triaxial variables (such as accelerometry - `aw`) are represented in
 multiple colors.
@@ -53,7 +52,8 @@ multiple colors.
 view_cats(mn200312_58, c("p", "aw", "mw"))
 ```
 
-<img src="man/figures/README-plot_triax-1.png" width="100%" />
+![interactive figure with triaxial
+data](man/figures/README-plot_triax-1.gif)
 
 Explore the animal’s 3d movement trajectory.
 
@@ -61,4 +61,4 @@ Explore the animal’s 3d movement trajectory.
 view_cats_3d(mn200312_58)
 ```
 
-<img src="man/figures/README-plot_3d-1.png" width="100%" />
+![3d movement trajectory of a whale](man/figures/README-plot_3d-1.gif)
