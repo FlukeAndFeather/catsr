@@ -18,6 +18,7 @@
 #'   * x (num) x coordinate of dead-reckoned track, relative to deployment location (m; eastings)
 #'   * y (num) y coordinate of dead-reckoned track, relative to deployment location (m; northings)
 #'   * z (num) z coordinate of dead-reckoned track, relative to deployment location (m; depth)
+#'
 #' And attributes:
 #'   * whaleid (chr) e.g. "mn200312-58"
 #'   * fs (num) sampling rate in Hz

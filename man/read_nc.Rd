@@ -27,7 +27,10 @@ A tibble with columns:
 \item x (num) x coordinate of dead-reckoned track, relative to deployment location (m; eastings)
 \item y (num) y coordinate of dead-reckoned track, relative to deployment location (m; northings)
 \item z (num) z coordinate of dead-reckoned track, relative to deployment location (m; depth)
+}
+
 And attributes:
+\itemize{
 \item whaleid (chr) e.g. "mn200312-58"
 \item fs (num) sampling rate in Hz
 \item tz (chr) local timezone e.g. "Etc/GMT+3" for UTC-3

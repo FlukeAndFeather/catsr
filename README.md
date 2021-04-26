@@ -11,26 +11,30 @@ catsr\_readme
 [![codecov](https://codecov.io/gh/FlukeAndFeather/catsr/branch/master/graph/badge.svg?token=006B4PEFI0)](https://codecov.io/gh/FlukeAndFeather/catsr)
 <!-- badges: end -->
 
-catsr reads and visualizes CATS PRH files.
+catsr is an R package for reading and visualizing CATS PRH files. For
+information on the PRH creation tools and workflow, see
+[CATS-Methods-Materials](https://github.com/wgough/CATS-Methods-Materials)
+and the [CATS Data Processing
+Workshop](https://catsworkshop.sites.stanford.edu/).
 
 ## Installation
 
-You can install catsr from [GitHub](https://github.com/) with:
+catsr is available on [GitHub](https://github.com/) and you can install
+it using devtools package. If you don’t have devtools installed,
+uncomment the line below. See section **Troubleshooting** at the end of
+this document for common errors.
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("FlukeAndFeather/catsr")
 ```
 
-On Windows you might encounter
-`Error: Failed to install 'catsr' from GitHub: (converted from warning) cannot remove prior installation of package '___'`.
-The usual solution is: close all instances of R (including RStudio),
-start a new session, and try again.
-
 ## Reading data
 
-Read a CATS PRH file in NetCDF format. The .nc file for deployment
-mn200312-58 is included in the package.
+Read a CATS PRH file in netCDF format with read\_nc(). The .nc file for
+deployment mn200312-58 is included in the package. Note: triaxial
+variables (aw, mw, gw) are stored as three-column matrices, so only the
+first column (corresponding to the x-axis) shows up in View().
 
 ``` r
 library(catsr)
@@ -58,8 +62,8 @@ mn200312_58_from_nc
 ## Visualizing data
 
 Examine PRH variables (e.g. depth, pitch, and roll) in an interactive
-plot. This package also provides deployment mn200312-58 directly for use
-in R (`mn200312_58`).
+plot with view\_cats(). This package also provides deployment
+mn200312-58 directly for use in R.
 
 ``` r
 view_cats(mn200312_58, c("p", "pitch", "roll"))
@@ -84,3 +88,21 @@ view_cats_3d(mn200312_58)
 ```
 
 ![3d movement trajectory of a whale](man/figures/README-plot_3d-1.gif)
+
+## Troubleshooting
+
+*All platforms:*
+
+If you encounter an error installing catsr (or devtools), close all
+instances of R (including RStudio). Start a new session and run the
+install command again.
+
+*Windows:*
+
+Installing devtools on R&gt;=4.0.0 requires
+[Rtools40](https://cran.r-project.org/bin/windows/Rtools/).
+
+*Mac OSX:*
+
+Installing devtools on Mac OSX requires Command Line Tools. In your
+terminal, run `xcode-select --install`.
