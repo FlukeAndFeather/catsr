@@ -9,6 +9,7 @@ catsr\_readme
 
 [![R-CMD-check](https://github.com/FlukeAndFeather/catsr/workflows/R-CMD-check/badge.svg)](https://github.com/FlukeAndFeather/catsr/actions)
 [![codecov](https://codecov.io/gh/FlukeAndFeather/catsr/branch/master/graph/badge.svg?token=006B4PEFI0)](https://codecov.io/gh/FlukeAndFeather/catsr)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5140485.svg)](https://doi.org/10.5281/zenodo.5140485)
 <!-- badges: end -->
 
 catsr is an R package for reading and visualizing CATS PRH files. For
