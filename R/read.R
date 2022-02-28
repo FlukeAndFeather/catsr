@@ -41,7 +41,11 @@ read_nc <- function(nc_path) {
     diff_amat <- apply(amat, 2, lead) - amat
     apply(diff_amat, 1, function(xyz) sqrt(sum(xyz^2)))
   }
-  geotrack <- ncdf4::ncvar_get(nc, "geoPtrack")
+  geotrack <- if ("geoPtrack" %in% names(nc$var)) {
+    ncdf4::ncvar_get(nc, "geoPtrack")
+  } else {
+    matrix(NA, ncol = 3)
+  }
   result <- tibble(
     dn = as.vector(ncdf4::ncvar_get(nc, "DN")),
     p = as.vector(ncdf4::ncvar_get(nc, "P")),
